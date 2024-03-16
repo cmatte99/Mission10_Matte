@@ -1,0 +1,6 @@
+@APIbowlers_HostAddress = http://localhost:5101
+
+GET {{APIbowlers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
