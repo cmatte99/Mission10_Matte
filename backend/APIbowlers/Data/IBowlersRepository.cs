@@ -1,22 +1,17 @@
-﻿//namespace APIbowlers.Data
-//{
-//    public interface IBowlersRepository
-//    {
-//        IEnumerable<Bowlers> bowlers { get; }
-//        IEnumerable<Teams> teams { get; }
-
-//        IEnumerable<Bowlers> GetBowlers();
-//        IEnumerable<Teams> GetTeams();
-//    }
-//}
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace APIbowlers.Data
 {
+    // Interface for accessing bowlers data
     public interface IBowlersRepository
     {
+        // Method to get all bowlers
         IEnumerable<Bowlers> GetBowlers();
+
+        // Method to get all teams
         IEnumerable<Teams> GetTeams();
+
+        // Method to get bowlers with their associated team names
         IEnumerable<BowlerWithTeamName> GetBowlersWithTeamNames();
     }
 }
